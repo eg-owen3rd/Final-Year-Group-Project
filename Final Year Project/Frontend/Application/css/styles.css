@@ -21,4 +21,118 @@ margin: 0;
 
 .container {
   padding: 40px;
+  text-align: center;
+}
+
+.home-button {
+  width: 100%;
+  margin: 50px auto 0;
+  padding: 14px 20px;
+  border: 2px solid #a35d00;
+  background: #ffb133;
+  cursor: pointer;
+}
+
+.ingredients-page {
+  margin: 0;
+  background: #f4f6f8;
+}
+
+.ingredients-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredients-card {
+  width: 520px;
+  max-width: 100%;
+  background: white;
+  padding: 32px 36px;
+  border-radius: 18px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #333;
+  font-size: 30px;;
+}
+
+.form-section {
+  margin-bottom: 22px;
+}
+
+.form-section label,
+.section-label {
+  display: block;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.text-input {
+  width: 400px;
+  max-width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #f4a07a;
+  border-radius: 6px;
+  font-size:14px;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #ff7a2f;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 18px;
+  font-size:14px;
+}
+
+.radio-row {
+  display: flex;
+  gap: 18px;
+  font-size:14px;
+  justify-content: center;
+}
+
+.skill {
+  font-weight: 700;
+}
+
+.skill.beginner {
+  color: #6aa84f;
+}
+
+.skill.intermediate {
+  color: #3d85c6;
+}
+
+.skill.advanced {
+  color: #e69138;
+}
+
+.meal-button {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin: 24px auto 0;
+  padding: 14px 20px;
+  border: 2px solid #a35d00;
+  background: #ffb133;
+  text-align: center;
+  cursor: pointer;
+}
+
+.meal-button:hover {
+  background: #ffa31a;
+}
+
+.meal-icon {
+  text-align: center;
+  font-size: 64px;
+  margin-top: 26px;
 }
