@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Meals</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="ingredients-page">
+
+    <nav class="navbar">
+    <h2>Meal Planner</h2>
+
+    <div>
+        <a href="../index.html">Home</a>
+        <a href="signin.html">Sign Out</a>
+    </div>
+    </nav>
+
+    <main class="ingredients-wrapper">
+        <div class="ingredients-card">
+
+    <h1 class="page-title">Find Meals</h1>
+
+    <section class="form-section">
+        <label for="ingredients">Enter your ingredients:</label>
+        <input
+        type="text"
+        id="ingredients"
+        name="ingredients"
+        class="text-input"
+        placeholder="e.g. Chicken, Eggs, Onions, Flour...">
+    </section>
+
+    <section class="form-section">
+        <p class="section-label">Select dietary requirements:</p>
+
+        <div class="checkbox-grid">
+            <label><input type="checkbox" /> Gluten-free</label>
+            <label><input type="checkbox" /> Low-sodium</label>
+            <label><input type="checkbox" /> Nut-free</label>
+            <label><input type="checkbox" /> Low-sugar</label>
+            <label><input type="checkbox" /> Low-FODMAP</label>
+            <label><input type="checkbox" /> Dairy-free</label>
+            <label><input type="checkbox" /> Vegan</label>
+            <label><input type="checkbox" /> Vegetarian</label>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <p class="section-label">Select equipment:</p>
+
+        <div class="checkbox-grid">
+            <label><input type="checkbox" /> Oven</label>
+            <label><input type="checkbox" /> Stove</label>
+            <label><input type="checkbox" /> Microwave</label>
+            <label><input type="checkbox" /> Air fryer</label>
+            <label><input type="checkbox" /> Slow cooker</label>
+            <label><input type="checkbox" /> Blender</label>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <p class="section-label">Other equipment:</p>
+        <input
+        type="text"
+        id="other-equipment"
+        name="other-equipment"
+        class="text-input"
+        placeholder="e.g. Kettle, Grill, Pans...">
+    </section>
+
+    <section class="form-section">
+        <p class="section-label">Select skill level:</p>
+
+        <div class="radio-row">
+            <label class="skill beginner"><input type="radio" name="skill" checked /> Beginner</label>
+            <label class="skill intermediate"><input type="radio" name="skill" value="intermediate" /> Intermediate</label>
+            <label class="skill advanced"><input type="radio" name="skill" value="advanced" /> Advanced</label>
+        </div>
+    </section>
+
+    <button class="meal-button">Find Meals</button>
+        <div class ="meal-icon">🍔</div>
+
+        </div>
+    </main>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
