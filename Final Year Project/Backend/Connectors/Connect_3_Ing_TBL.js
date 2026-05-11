@@ -6,7 +6,7 @@ let mysql = require('mysql');
 let con = mysql.createConnection({
     host: "dragon.kent.ac.uk",
     user: "oh215",
-    password: "/rfallo",
+    password: "Password_upload",
     database: "oh215"
 });
 // Standard code copy-paste from connect_0 //
