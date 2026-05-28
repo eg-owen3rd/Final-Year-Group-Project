@@ -11,16 +11,12 @@ let con = mysql.createConnection({
 });
 
 //Error throw and connection confirm//
-con.connect(function (err){
+con.connect(err => {
     if (err) throw err;
     console.log("Connected");
-
-    // Table queries for required connection here //
-    // Query such as request data or update tables //
-
-    // Connection close //
-    con.end();
 });
+
+module.exports = con;
 
 // Note For large scale manual inserts for test data //
 // let sql = "INSERT INTO Table_to_Use (values to update) VALUES ?";
