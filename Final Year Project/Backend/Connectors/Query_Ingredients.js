@@ -15,4 +15,14 @@ function getIng() {
     });
 }
 
-module.exports = {getIng};
+function insertIng(id, name) {
+    return new Promise((resolve, reject) => {
+        const sql = "INSERT INTO Ingredients (Ingre_ID, Name) VALUES (?, ?)";
+        con.query(sql, [id, name], (err, result) => {
+            if (err) return reject(err);
+            resolve(result);
+        });
+    });
+}
+
+module.exports = {getIng, insertIng};
