@@ -1,5 +1,5 @@
 // Connector method shell one. //
-let mysql = require('mysql');
+let mysql = require('mysql2');
 
 //Creation of the connection using host address, //
 // User ,and Pass //
