@@ -27,15 +27,28 @@ if (button) {
             equipment.push(checkbox.value);
         });
 
-    // Print values
-    console.log("Ingredients:", ingredients);
+    // Group all form data
+    const mealRequest = {
+        ingredients: ingredients,
+        otherEquipment: otherEquipment,
+        skillLevel: selectedSkill,
+        dietaryRequirements: dietaryRequirements,
+        equipment: equipment
+    };
 
-    console.log("Other Equipment:", otherEquipment);
+    console.log("Meal Request:", mealRequest);
 
-    console.log("Skill Level:", selectedSkill);
+    // Temporary API test
+    fetch("http://localhost:3000/api/Search?q=" + ingredients + "&mode=ingredient")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log("Meal results from API:", data);
+    })
+    .catch(function (error) {
+        console.log("API connection error:", error);
+    });
 
-    console.log("Dietary Requirements:", dietaryRequirements);
-
-    console.log("Equipment:", equipment);
 });
 }
