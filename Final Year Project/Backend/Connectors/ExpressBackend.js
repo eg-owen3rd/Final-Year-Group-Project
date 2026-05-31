@@ -1,5 +1,6 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
+const cors = require("cors");
 
 const DtryReqy = require("./Query_Dtry");
 const Equip = require("./Query_Equip");
@@ -8,6 +9,8 @@ const Search = require("./Query_Meals");
 const Users = require("./Query_User");
 
 const app = express();
+
+app.use(cors());
 app.use(express.json());
 
 // Dietary Requirements section of the Backend //
