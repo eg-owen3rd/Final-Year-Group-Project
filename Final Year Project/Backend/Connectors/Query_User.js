@@ -5,7 +5,7 @@ const con = require("./DB_Connector")
 // Create a new user for the user table //
 function CreateUser(Name, Email, Pass_Hash) {
     return new Promise((resolve, reject) => {
-        const sql = 'INSERT INTO Users (User_ID, Name, Email, Pass_Hash, Created_at)' +
+        const sql = 'INSERT INTO Users (User_ID, Name, Email, Pass_Hash, Created_at) ' +
             'VALUES (?, ?, ?, ?, NOW())';
         con.query(sql, [Name, Email, Pass_Hash], (err, result) => {
             if (err) return reject(err);
