@@ -39,12 +39,30 @@ if (button) {
     console.log("Meal Request:", mealRequest);
 
     // Temporary API test
-    fetch("http://localhost:3000/api/Search?q=" + ingredients + "&mode=ingredient")
+    fetch("http://localhost:3000/api/Search?q=" + encodeURIComponent(ingredients) + "&mode=ingredient")
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         console.log("Meal results from API:", data);
+        const resultsDiv = document.getElementById("meal-results");
+
+        resultsDiv.innerHTML = "";
+        if (data.length === 0) {
+        resultsDiv.innerHTML = "<p>No meals found.</p>";
+        return;
+    }
+
+    data.forEach(function (meal) {
+        resultsDiv.innerHTML += `
+            <div class="meal-card">
+                <h3>${meal.Title}</h3>
+                <p>${meal.Description}</p>
+                <p><strong>Ingredient:</strong> ${meal.ingredient}</p>
+                <p><strong>Quantity:</strong> ${meal.Quantity}</p>
+            </div>
+        `;
+    });
     })
     .catch(function (error) {
         console.log("API connection error:", error);

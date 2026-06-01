@@ -137,6 +137,48 @@ margin: 0;
   margin-top: 26px;
 }
 
+#meal-results {
+  margin-top: 28px;
+}
+
+.meal-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.meal-card h3 {
+  margin-top: 0;
+  color: #ff5a1f;
+}
+
+.home-container {
+  width: 520px;
+  max-width: 100%;
+  background: white;
+  padding: 32px 36px;
+  border-radius: 18px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.home-action-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 20px;
+  border: 2px solid #a35d00;
+  background: #ffb133;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-action-button:hover {
+  background: #ffa31a;
+}
+
 /* Dylans css styling */
 .auth-page {
   min-height: 100vh;
@@ -219,6 +261,7 @@ margin: 0;
 }
 
 .auth-page .auth-button {
+  display: block;
   width: 100%;
   padding: 13px;
   border: none;
@@ -230,6 +273,8 @@ margin: 0;
   cursor: pointer;
   transition: background 0.2s ease;
   margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .auth-page .auth-button:hover {
